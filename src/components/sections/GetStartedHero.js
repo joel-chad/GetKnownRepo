@@ -15,7 +15,7 @@ const defaultProps = {
   ...SectionProps.defaults
 }
 
-const Hero = ({
+const GetStartedHero = ({
   className,
   topOuterDivider,
   bottomOuterDivider,
@@ -62,53 +62,29 @@ const Hero = ({
         <div className={innerClasses}>
           <div className="hero-content">
             <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
-              Do you want your business to <span className="text-color-primary">get known?</span>
+              Thank you for choosing us.
             </h1>
             <div className="container-xs">
               <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
-                We help businesses boost their online presence to their customers by designing, posting and marketing products on various 
-                social media platforms and creating interactive websites.
+                Please leave your email or any contact details. If possible please answer the questions in the
+                questionnaire below.They will help us understand you better.
                 </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
                   <Button tag="a" color="primary">
-                    <Link to='/get-started'>Get started</Link>
+                    <Link to='/get-started'>Answer the Questionnaire</Link>
                     </Button>
-                  {/* <Button tag="a" color="dark" wideMobile href="https://github.com/cruip/open-react-template/">
-                    View on Github
-                    </Button> */}
                 </ButtonGroup>
               </div>
             </div>
           </div>
-          <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
-            <a
-              data-video="https://player.vimeo.com/video/174002812"
-              href="#0"
-              aria-controls="video-modal"
-              onClick={openModal}
-            >
-              <Image
-                className="has-shadow"
-                src={require('./../../assets/images/video-placeholder.jpg')}
-                alt="Hero"
-                width={896}
-                height={504} />
-            </a>
-          </div>
-          <Modal
-            id="video-modal"
-            show={videoModalActive}
-            handleClose={closeModal}
-            video="https://player.vimeo.com/video/174002812"
-            videoTag="iframe" />
         </div>
       </div>
     </section>
   );
 }
 
-Hero.propTypes = propTypes;
-Hero.defaultProps = defaultProps;
+GetStartedHero.propTypes = propTypes;
+GetStartedHero.defaultProps = defaultProps;
 
-export default Hero;
+export default GetStartedHero;
