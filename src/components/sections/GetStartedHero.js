@@ -72,7 +72,7 @@ const GetStartedHero = ({
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
                   <Button tag="a" color="primary">
-                    <Link to='/get-started'>Answer the Questionnaire</Link>
+                    <Link to='/get-started/questions'>Answer the Questionnaire</Link>
                     </Button>
                 </ButtonGroup>
               </div>
